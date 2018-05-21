@@ -24,8 +24,8 @@ import firebase from 'firebase';
         return (
           <div className="App">
             <AddPost onAdd={(posts) => {
-              const newRedditPost = { ...posts, comments: 5, submitted: moment().format() }
-              firebase.database().ref('posts').push(newRedditPost)
+              const newPost = { ...posts, comments: 5, submitted: moment().format() }
+              firebase.database().ref('posts').push(newPost)
             }}
             />
             {_.map(this.state.posts, posts => {
