@@ -1,0 +1,16 @@
+.postContainer {
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.postContainerBottom {
+    display: flex; 
+    flex-direction: row;
+}
+
+.postComments {
+    margin-right: 30px;
+    
+}
+
